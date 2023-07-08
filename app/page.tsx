@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Header from "./components/porfolio/Header";
 import Hero from "./components/porfolio/Hero";
@@ -23,7 +21,7 @@ export default function HomePage({}: Props) {
       <About />
       <Works />
       <Technology />
-      <Experience />
+      {/* <Experience /> */}
     </main>
   );
 }

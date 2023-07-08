@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -122,7 +124,7 @@ export default function Technology({}: Props) {
             <Card
               key={idx}
               title={el.title}
-              //   classes={idx === 1 ? "mt-5" : "mt-0"}
+                classes={idx === 1 ? "mt-5" : "mt-0"}
             />
           ))}
         </motion.div>

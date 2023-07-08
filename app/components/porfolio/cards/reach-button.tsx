@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
-import { newRedirectPath } from "@/app/utils/redirect";
+import { newRedirectPath } from "@/app/utils/hrefRedirect";
 
 type Props = {};
 
