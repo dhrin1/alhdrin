@@ -12,7 +12,7 @@ export default function FeatureVisual({ children, id }: VisualProps) {
   const fullscreenFeature = useFeatureStore((state) => state.fullscreenFeature);
   return (
     <div
-      className={`fixed inset-0 flex items-center justify-center transition-opacity ${
+      className={`fixed inset-0 flex items-center justify-center  ${
         fullscreenFeature === id
           ? `opacity-100`
           : `opacity-0 pointer-events-none`

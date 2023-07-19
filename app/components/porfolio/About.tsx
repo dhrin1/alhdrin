@@ -78,18 +78,20 @@ export default function About({}: Props) {
                 <span className="text-md md:text-xl lg:text-2xl text-black-primary dark:text-gray-300">
                   Here's my little background
                 </span>
-                <p className="text-md md:text-xl lg:text-3xl text-black-primary dark:text-white">
-                  I'm Alhdrin A. Gungon residing in Baco, Oriental Mindoro
-                  Philippines currently working as Junior Frontend Developer at
-                  MVSoftech. I graduated at Mindoro State University and
-                  successfully earned a degree in Bachelor of Science in
-                  Information Technology. My technical skills include having
-                  knowledge about HTML, CSS, and JavaScript. Furthermore, I also
-                  possess the knowledge in the C Programming Language, ReactJS,
-                  NodeJS, ExpressJS, MongoDB, Bootstrap, Tailwindcss, Figma,
-                  PHP, and MySQL with CMS Wordpress. Asside from that I do
-                  freelancing as a Full Stack Developer when end of working
-                  hours at MVSoftech.
+                <p className="text-md md:text-xl lg:text-4xl text-black-primary dark:text-white">
+                  I'm Alhdrin Awit Gungon and I do loved such things where In my
+                  free time, I enjoy pursuing my hobbies, which include
+                  <span className="text-blue-600"> listening to music</span>,
+                  watching movies, playing games, and most of the time I staying
+                  up-to-date with the latest technologies through research. I
+                  find great pleasure in{" "}
+                  <span className="text-pink-600">
+                    exploring new advancements
+                  </span>{" "}
+                  and learning about cutting-edge developments in various
+                  fields. It's a way for me to relax, unwind, and expand my
+                  knowledge beyond my{" "}
+                  <span className="text-yellow-500">professional</span> life.
                 </p>
               </motion.div>
             </div>

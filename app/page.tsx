@@ -21,7 +21,7 @@ export default function HomePage({}: Props) {
       <About />
       <Works />
       <Technology />
-      {/* <Experience /> */}
+      <Experience />
     </main>
   );
 }

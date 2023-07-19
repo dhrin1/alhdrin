@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useEffect } from "react";
 import FeatureList from "./feature/feature-list";
@@ -51,25 +51,40 @@ const features = [
 export default function Works({}: Props) {
   const [scope, animate] = useAnimate();
   const fullscreenFeature = useFeatureStore((state) => state.fullscreenFeature);
+  const lastfullscreenFeature = useFeatureStore(
+    (state) => state.lastscreenFeature
+  );
   const setFullscreenFeature = useFeatureStore(
     (state) => state.setFullscreenFeature
   );
 
   useEffect(() => {
     if (fullscreenFeature) {
-      animate(
-        ".feature-title",
-        { opacity: 0, x: "-200px" },
-        { duration: 0.3, delay: stagger(0.05) }
-      );
+      animate([
+        [
+          ".feature-title",
+          { opacity: 0, x: "-200px" },
+          { duration: 0.3, delay: stagger(0.05) },
+        ],
+        [
+          `.visual-${lastfullscreenFeature}`,
+          { opacity: 1, scale: 1, pointerEvents: "auto" },
+        ],
+      ]);
     } else {
-      animate(
-        ".feature-title",
-        { opacity: 1, x: "0px" },
-        { duration: 0.3, delay: stagger(0.05) }
-      );
+      animate([
+        [
+          ".feature-title",
+          { opacity: 1, x: "0px" },
+          { duration: 0.3, delay: stagger(0.05) },
+        ],
+        [
+          `.visual-${fullscreenFeature}`,
+          { opacity: 0, scale: 0.75, pointerEvents: "none" },
+        ],
+      ]);
     }
-  }, [fullscreenFeature]);
+  }, [fullscreenFeature, lastfullscreenFeature]);
 
   return (
     <div className="mx-auto max-w-7xl px-2 ">
@@ -80,7 +95,7 @@ export default function Works({}: Props) {
         {fullscreenFeature && (
           <button
             onClick={() => setFullscreenFeature(null)}
-            className="fixed bottom-6 left-1/2 z-10 -translate-x-1/2 bg-black-normal text-white rounded-xl px-3 py-2 shadow-lg"
+            className="fixed bottom-6 left-1/2 z-10 -translate-x-1/2 text-black-primary dark:text-white rounded-xl text-sm"
           >
             Back to site
           </button>
@@ -104,7 +119,6 @@ export default function Works({}: Props) {
           </div>
         </div>
       </div>
-      <div className="h-screen ">More toom to scroll</div>
     </div>
   );
 }

@@ -11,7 +11,6 @@ import {
 import { BiSun, BiMoon } from "react-icons/bi";
 import { motion } from "framer-motion";
 import useThemeMode from "@/app/hooks/useThemeMode";
-import { newRedirectPath } from "@/app/utils/hrefRedirect";
 
 type Props = {};
 

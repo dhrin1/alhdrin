@@ -24,7 +24,7 @@ export default function FeatureCard({ gradient, children, id }: Props) {
       {children}
       <button
         onClick={() => setFullscreenFeature(id)}
-        className="absolute bottom-6 right-6 rounded-xl bg-black-primary px-3 py-2 text-md text-white shadow-lg"
+        className="absolute bottom-6 right-6 rounded-xl text-sm bg-black-primary px-3 py-2 text-md text-white shadow-lg"
       >
         Show me
       </button>
