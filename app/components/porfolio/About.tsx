@@ -17,16 +17,16 @@ export default function About({}: Props) {
                   About
                 </h2>
                 <span className="text-sm md:text-xl lg:text-2xl text-black-primary dark:text-gray-300">
-                  Here's my little background
+                  Heres my little background
                 </span>
                 <p className="text-md md:text-xl lg:text-3xl text-black-primary dark:text-white">
-                  I'm Alhdrin A. Gungon residing in Baco, Oriental Mindoro,
+                  Im Alhdrin A. Gungon residing in Baco, Oriental Mindoro,
                   Philippines. In my free time, I enjoy pursuing my hobbies,
                   which include listening to music, watching movies, playing
                   games, and staying up-to-date with the latest technologies
                   through research. I find great pleasure in exploring new
                   advancements and learning about cutting-edge developments in
-                  various fields. It's a way for me to relax, unwind, and expand
+                  various fields. Its a way for me to relax, unwind, and expand
                   my knowledge beyond my professional life.
                 </p>
               </div>

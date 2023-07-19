@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -65,8 +65,6 @@ export default function Technology({}: Props) {
     return number;
   }
 
-  console.log(separate(15));
-
   return (
     <div className="h-screen">
       <div className="max-w-7xl mx-auto h-full">
@@ -92,7 +90,7 @@ export default function Technology({}: Props) {
               className="text-6xl font-bold text-black-primary dark:text-white"
               variants={staggerAnimate}
             >
-              Technology's I Used
+              Technology I Used
             </motion.h1>
             <motion.p
               className="text-lg text-black-primary dark:text-gray-300"
@@ -124,7 +122,7 @@ export default function Technology({}: Props) {
             <Card
               key={idx}
               title={el.title}
-                classes={idx === 1 ? "mt-5" : "mt-0"}
+              classes={idx === 1 ? "mt-5" : "mt-0"}
             />
           ))}
         </motion.div>
